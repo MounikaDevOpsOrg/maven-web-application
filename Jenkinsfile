@@ -10,4 +10,8 @@ stage('to build')
   {
     sh "${mavenhome}/bin/mvn clean package"
   }
+  stage
+  {
+    sh "${mavenhome}/bin/mvn clean package sonar:sonar"
+  }
 }
