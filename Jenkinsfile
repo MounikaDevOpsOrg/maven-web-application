@@ -14,4 +14,8 @@ stage('to build')
   {
     sh "${mavenhome}/bin/mvn clean package sonar:sonar"
   }
+  stage("Upload Artifactories")
+  {
+    sh "${mavenhome}/bin/mvn clean package sonar:sonar deploy"
+  }
 }
