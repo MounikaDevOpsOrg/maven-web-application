@@ -1,6 +1,6 @@
 node
 {
-  def mavenhome= tool name: maven_3.6.3
+  def mavenhome= tool name: "maven_3.6.3"
   
 stage('to get the code from SCM')
 {
