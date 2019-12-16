@@ -8,6 +8,6 @@ git credentialsId: '6747513a-c106-4467-8921-f7968da6f004', url: 'https://github.
 }
 stage('to build')
   {
-    sh "{mavenhome}/bin/mvn clean package"
+    sh "${mavenhome}/bin/mvn clean package"
   }
 }
